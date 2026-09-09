@@ -1,7 +1,8 @@
 # Portfolio — Danishvaran Kamalakannan
 
-Static site. No build step, no dependencies. Three files do the work:
-`index.html`, `styles.css`, `main.js`.
+Static site, comic-page theme. No build step, no dependencies beyond Google
+Fonts. Three files do the work: `index.html`, `styles.css`, `main.js`, plus
+`assets/` for the hero clip and project imagery.
 
 ## Preview locally
 
@@ -26,6 +27,22 @@ const LINKS = {
 
 Any value left as `""` renders that link disabled rather than shipping a dead
 `href`, so it is safe to blank one out while a destination is being moved.
+Project buttons in the Work section carry their URLs inline in `index.html`
+rather than through `LINKS`.
+
+## Projects and their links
+
+| # | Project | Link | Last checked |
+| --- | --- | --- | --- |
+| 001 | SplitBuddy | <https://splitbuddy-iota.vercel.app> | `200` |
+| 002 | D.A.N | <https://dan-chat.onrender.com> | `200` |
+| 003 | DanTech IT Helpdesk Agent | <https://github.com/Dminish/it-helpdesk-triage-agent> | `200` |
+| 004 | NOC Monitor | <https://noc-monitor-by-danish.streamlit.app> | `303` → login |
+| 005 | Premier League Predictor | <https://premier-league-match-prediction-by-danish.streamlit.app> | `303` → login |
+
+A card only carries the **Live** badge when its URL actually serves. DanTech
+links to source rather than a demo, so it has no badge. If you deploy the
+DanTech Streamlit demo, add the URL and the badge together.
 
 ### Known issue: both Streamlit apps are private
 

@@ -97,7 +97,7 @@ const TIMELINE = {
   2026: {
     role: "Master in Data Science",
     org: "Universiti Malaya — CGPA 3.33",
-    copy: "Graduating March 2026 with two deployed machine learning applications behind me: a Random Forest engine that reads S.M.A.R.T. telemetry for early drive failure, and a deep learning match predictor. Looking for the role where infrastructure fluency and data science stop being two separate jobs."
+    copy: "Graduated in March 2026, and spent the year shipping: a bill splitter built on a vision model and real-time state, an AI chat app with hands-free voice, and a LangGraph agent that triages IT tickets and knows when to escalate — alongside the Random Forest and deep learning models from the MSc. Looking for the role where infrastructure fluency, modelling and shipping stop being three separate jobs."
   }
 };
 
@@ -147,10 +147,12 @@ if (panel) {
   paint(tabs[0].dataset.year);
 }
 
-/* ---- pointer parallax on project posters --------------------- */
+/* ---- shared media queries ----------------------------------- */
 
 const fine = window.matchMedia("(hover: hover) and (pointer: fine)").matches;
 const still = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
+
+/* ---- pointer parallax on project posters --------------------- */
 
 if (fine && !still) {
   document.querySelectorAll("[data-tilt]").forEach((el) => {
