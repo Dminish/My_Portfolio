@@ -98,6 +98,9 @@ a{ color:inherit; }
 
 /* the title block is its own panel, tilted just off square */
 .cover__head{
+  /* the name is sized against this panel, not the viewport — at the
+     two-column breakpoint the column is far narrower than the window */
+  container-type:inline-size;
   border:var(--rule) solid var(--ink);
   background:var(--gold);
   box-shadow:8px 8px 0 var(--ink);
@@ -110,7 +113,7 @@ a{ color:inherit; }
 }
 .cover__name{
   margin:0; font-family:var(--display);
-  font-size:clamp(2rem,7vw,4.6rem); line-height:.86;
+  font-size:clamp(1.8rem,11vw,4.6rem); line-height:.86;
   letter-spacing:-.02em; text-transform:uppercase;
   /* the classic printed logo: ink face, offset red plate behind it */
   color:var(--panel);
@@ -122,6 +125,13 @@ a{ color:inherit; }
   margin:0; font-family:var(--display);
   font-size:clamp(.62rem,1.3vw,.8rem); letter-spacing:.18em; text-transform:uppercase;
 }
+
+/* viewport fallback for the two-column layout, then the precise
+   container-relative size for browsers that support it */
+@media (min-width:900px){
+  .cover__name{ font-size:clamp(1.6rem,4.4vw,4.6rem); }
+}
+.cover__name{ font-size:clamp(1.6rem,12cqi,4.6rem); }
 
 .cover__panel{
   position:relative; overflow:hidden; min-height:44svh;
