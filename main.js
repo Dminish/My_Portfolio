@@ -169,6 +169,22 @@ if (fine && !still) {
   });
 }
 
+/* ---- pointer glow -------------------------------------------- */
+/* the glass needs a moving light source to catch, otherwise the frost
+   reads as flat grey */
+
+if (fine && !still) {
+  const glow = document.createElement("div");
+  glow.className = "cursor-glow";
+  glow.setAttribute("aria-hidden", "true");
+  document.body.appendChild(glow);
+  addEventListener("pointermove", (e) => {
+    glow.classList.add("is-on");
+    glow.style.transform = `translate3d(${e.clientX}px, ${e.clientY}px, 0)`;
+  }, { passive: true });
+  addEventListener("pointerleave", () => glow.classList.remove("is-on"));
+}
+
 /* ---- footer year --------------------------------------------- */
 
 document.getElementById("year").textContent = new Date().getFullYear();
