@@ -139,7 +139,7 @@ a{ color:inherit; }
   font-family:var(--display); font-weight:800;
   font-size:1.05rem; letter-spacing:.14em; text-decoration:none;
   background:linear-gradient(100deg, var(--violet), var(--cyan));
-  -webkit-background-clip:text; background-clip:text; color:transparent;
+  -webkit-background-clip:text; background-clip:text; color:transparent; /* impeccable-disable-line gradient-text -- logotype */
 }
 .hdr__nav ul{ display:flex; gap:clamp(.7rem,2.2vw,1.9rem); list-style:none; margin:0; padding:0; }
 .hdr__nav a{
@@ -188,7 +188,7 @@ a{ color:inherit; }
   margin:0; font-family:var(--display); font-weight:800;
   line-height:.95; letter-spacing:-.035em; text-transform:uppercase;
   background:linear-gradient(100deg, #fff 10%, var(--violet) 55%, var(--cyan) 95%);
-  -webkit-background-clip:text; background-clip:text; color:transparent;
+  -webkit-background-clip:text; background-clip:text; color:transparent; /* impeccable-disable-line gradient-text -- the name is set as a logotype */
   font-size:clamp(1.8rem,11vw,4.4rem);
 }
 .cover__tag{
