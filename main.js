@@ -185,6 +185,18 @@ if (fine && !still) {
   addEventListener("pointerleave", () => glow.classList.remove("is-on"));
 }
 
+/* ---- post-credits clip -------------------------------------- */
+/* plays only while on screen, so it costs nothing until someone
+   scrolls all the way down */
+
+const clip = document.querySelector(".post__screen");
+if (clip && !still) {
+  new IntersectionObserver(([e]) => {
+    if (e.isIntersecting) clip.play().catch(() => {});
+    else clip.pause();
+  }, { threshold: 0.5 }).observe(clip);
+}
+
 /* ---- footer year --------------------------------------------- */
 
 document.getElementById("year").textContent = new Date().getFullYear();
