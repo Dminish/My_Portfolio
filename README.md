@@ -34,12 +34,19 @@ rather than through `LINKS`.
 
 | # | Project | Link | Last checked |
 | --- | --- | --- | --- |
-| 001 | SplitBuddy | <https://splitbuddy-iota.vercel.app> | `200` |
-| 002 | D.A.N | <https://dan-chat.onrender.com> | `200` |
+| 001 | SplitBuddy | <https://splitbuddy-iota.vercel.app> | `200`, then a login wall |
+| 002 | Ticket Ops | <https://github.com/Dminish/opsticket> | `200` |
 | 003 | DanTech IT Helpdesk Agent | <https://github.com/Dminish/it-helpdesk-triage-agent> | `200` |
-| 004 | NOC Monitor | <https://noc-monitor-by-danish.streamlit.app> | `303` → login |
-| 005 | Premier League Predictor | <https://premier-league-match-prediction-by-danish.streamlit.app> | `303` → login |
-| 006 | Ticket Ops | <https://github.com/Dminish/opsticket> | `200` |
+| 004 | D.A.N | <https://dan-chat.onrender.com> | `200` |
+| 005 | NOC Monitor | <https://noc-monitor-by-danish.streamlit.app> | `303` → login |
+| 005 | NOC Monitor, source | <https://github.com/Dminish/Predictive-Maintenance> | `200` |
+| 006 | Premier League Predictor | <https://premier-league-match-prediction-by-danish.streamlit.app> | `303` → login |
+| 006 | Premier League, source | <https://github.com/Dminish/Premier-League-Match-Prediction> | `200` |
+
+Cards run in the order a hiring manager would rank them, strongest first, so
+the numbering is the running order on the page rather than the order the
+projects were built. The two Streamlit cards carry a second, quieter button to
+their source, since the apps themselves are still private.
 
 A card only carries the **Live** badge when its URL actually serves. DanTech
 links to source rather than a demo, so it has no badge. If you deploy the

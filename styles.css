@@ -446,6 +446,13 @@ section{ padding:clamp(1.8rem,5vw,3.75rem) var(--gut); }
   border:1px solid var(--edge); box-shadow:none; pointer-events:none;
 }
 
+.proj__links{ display:flex; flex-wrap:wrap; gap:.7rem; }
+.btn--ghost{
+  background:none; color:var(--muted);
+  border:1px solid var(--edge); box-shadow:none;
+}
+.btn--ghost:hover{ color:var(--text); border-color:rgba(34,211,238,.5); box-shadow:none; }
+
 /* ---------- timeline ---------- */
 
 .tl__years{
