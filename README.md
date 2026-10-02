@@ -39,6 +39,7 @@ rather than through `LINKS`.
 | 003 | DanTech IT Helpdesk Agent | <https://github.com/Dminish/it-helpdesk-triage-agent> | `200` |
 | 004 | NOC Monitor | <https://noc-monitor-by-danish.streamlit.app> | `303` → login |
 | 005 | Premier League Predictor | <https://premier-league-match-prediction-by-danish.streamlit.app> | `303` → login |
+| 006 | Ticket Ops | <https://github.com/Dminish/opsticket> | `200` |
 
 A card only carries the **Live** badge when its URL actually serves. DanTech
 links to source rather than a demo, so it has no badge. If you deploy the
